@@ -1,0 +1,121 @@
+<!--  La page web du jeu 2048 doit contenir les éléments suivants :
+
+    un titre et les règles du jeu
+    le score de la partie en cours
+    la grille de jeu
+    un bouton pour démarrer une nouvelle partie
+    les boutons permettant au joueur de jouer un coup
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="styles2048.css" />
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="titre">
+        <h1>2048</h1>
+
+    </div>
+    <div class="link">
+        <a href="http://perso.univ-lyon1.fr/olivier.gluck/supports_enseig.html#LIFASR2)" target="_blank">Lien vers la page de l'UE</a>
+    </div>
+    <div class="border">
+        <p class="regle"> Vous allez maintenant ajouter les règles du jeu en haut de la page. Le but du jeu est de faire glisser des tuiles sur une grille, pour combiner les tuiles de mmes valeurs et créer ainsi une tuile portant le nombre 2048. Le joueur peut toutefois
+            continuer à jouer après cet objectif atteint pour faire le meilleur score possible.<br/> Le jeu se présente sous la forme d'une grille 4*4. Au début de la partie, deux cases contiennent un chiffre (2 ou 4). Les nombres peuvent se déplacer
+            à droite, à gauche, en haut ou en bas. Quand deux cases de même valeur se rencontrent, elles fusionnent en une case qui vaut la somme des 2 cases fusionnées. Après chaque action du joueur, une nouvelle case apparaît avec pour valeur 2 ou 4.
+            Le but est donc d'obtenir une case valant 2048 avant que la grille ne soit pleine et qu'aucun mouvement ne soit plus possible. Si plus aucun mouvement n'est possible, la partie est perdue.
+        </p>
+
+    </div>
+    <div class="score">
+        <p>SCORE : 0</p>
+    </div>
+    <div class="reset link">
+        <a href="./index.html">Recharger la page ici</a>
+    </div>
+    <div class="formu">
+      <form name="jeu-2048" method="get" action="action.php">
+        <input type="reset" name="action-joueur" value="Nouvelle Partie" class="NewP" />
+      </form>
+    </div>
+    <div class="grille">
+        <div class="ligne">
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+        </div>
+        <div class="ligne">
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+        </div>
+        <div class="ligne">
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+        </div>
+        <div class="ligne">
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+            <div class="cellule">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="boutonD">
+      <form name="jeu-2048" method="get" action="action.php">
+          <input type="submit" name="action-joueur" value="<" />
+      </form>
+    </div>
+    <div="coup">
+      
+    </div>
+
+</body>
+
+
+</html>
